@@ -1,0 +1,85 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/main_menu"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".MainActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical|center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/textView5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:fontFamily="sans-serif-medium"
+			android:gravity="center_horizontal"
+			android:text="The\n HangDroid's\n Body Count"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/title_blue"
+			android:shadowColor="@color/black"
+			android:shadowRadius="4"
+			android:textSize="35dp"
+			android:textStyle="normal|bold|italic"/>
+
+		<Button
+			android:id="@+id/button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:onClick="SinglePlayerClick"
+			android:text="Single Player"/>
+
+		<Button
+			android:id="@+id/button2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:onClick="MultiPlayerClick"
+			android:text="Multi-Player"/>
+
+		<Button
+			android:id="@+id/button3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:onClick="TextPlayerClick"
+			android:text="Text-Player"/>
+
+		<Button
+			android:id="@+id/button4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:onClick="ScoresClick"
+			android:text="Scores"/>
+
+		<Button
+			android:id="@+id/button5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:onClick="ContactsClick"
+			android:text="Contacts"/>
+
+		<TextView
+			android:id="@+id/textView6"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:text="By: Levi Lyon"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="@color/title_blue"/>
+
+	</LinearLayout>
+</RelativeLayout>
+<!-- From: file:/C:/Users/Levi/AndroidStudioProjects/TheHangDroidsBodyCount/app/src/main/res/layout/activity_main.xml -->

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.levi.hangdroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <!-- sms use permission -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.levi.hangdroid.HangDroidSplash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.levi.hangdroid.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.levi.hangdroid.GameActivity"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name="com.example.levi.hangdroid.GameOverLoseActivity"
+            android:label="@string/title_activity_game_over" >
+        </activity>
+        <activity
+            android:name="com.example.levi.hangdroid.MultiPlayerActivity"
+            android:label="@string/title_activity_multi_player" >
+        </activity>
+        <activity
+            android:name="com.example.levi.hangdroid.GameMultiActivity"
+            android:label="@string/title_activity_multi_player_game" >
+        </activity>
+        <activity
+            android:name="com.example.levi.hangdroid.GameOverWinActivity"
+            android:label="@string/title_activity_game_over_win" >
+        </activity>
+        <activity
+            android:name="com.example.levi.hangdroid.ScoresActivity"
+            android:label="@string/title_activity_scores" >
+        </activity>
+
+        <receiver
+            android:name="com.example.levi.hangdroid.IncomingSms"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.levi.hangdroid.TextActivity"
+            android:label="@string/title_activity_text" >
+        </activity>
+        <activity
+            android:name="com.example.levi.hangdroid.ContactsActivity"
+            android:label="@string/title_activity_contacts" >
+        </activity>
+    </application>
+
+</manifest>

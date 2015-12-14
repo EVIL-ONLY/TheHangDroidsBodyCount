@@ -1,0 +1,338 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/white"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context="com.example.levi.hangdroid.GameMultiActivity"
+	>
+
+	<ImageView
+		android:id="@+id/imageView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/textViewWrong"
+		android:layout_marginBottom="100dp"
+		android:scaleType="fitCenter"
+		android:src="@drawable/hangdroid_0"
+		/>
+
+	<LinearLayout
+		android:id="@+id/layoutLetters"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="75dp"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/textViewWrong"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_toEndOf="@+id/textView7"
+		android:text="   "
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="@color/red"
+		android:textStyle="bold"/>
+
+	<TextView
+		android:id="@+id/textView7"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/imageView"
+		android:layout_alignParentStart="true"
+		android:text="Wrong Guesses:"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="@color/red"
+		android:textStyle="bold"/>
+
+	<HorizontalScrollView
+		android:id="@+id/horizontalScrollView"
+		android:layout_width="wrap_content"
+		android:layout_height="75dp"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:background="@drawable/gradient_background">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="70dp"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentStart="true"
+			android:layout_below="@+id/imageView"
+			android:baselineAligned="true"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/buttonA"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="A"/>
+
+			<Button
+				android:id="@+id/buttonB"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="B"/>
+
+			<Button
+				android:id="@+id/buttonC"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="C"/>
+
+			<Button
+				android:id="@+id/buttonD"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="D"/>
+
+			<Button
+				android:id="@+id/buttonE"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="E"/>
+
+			<Button
+				android:id="@+id/buttonF"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="F"/>
+
+			<Button
+				android:id="@+id/buttonG"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="G"/>
+
+			<Button
+				android:id="@+id/buttonH"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="H"/>
+
+			<Button
+				android:id="@+id/buttonI"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="I"/>
+
+			<Button
+				android:id="@+id/buttonJ"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="J"/>
+
+			<Button
+				android:id="@+id/buttonK"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="K"/>
+
+			<Button
+				android:id="@+id/buttonL"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="L"/>
+
+			<Button
+				android:id="@+id/buttonM"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="M"/>
+
+			<Button
+				android:id="@+id/buttonN"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="N"/>
+
+			<Button
+				android:id="@+id/buttonO"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="O"/>
+
+			<Button
+				android:id="@+id/buttonP"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="P"/>
+
+			<Button
+				android:id="@+id/buttonQ"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="Q"/>
+
+			<Button
+				android:id="@+id/buttonR"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="R"/>
+
+			<Button
+				android:id="@+id/buttonS"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="S"/>
+
+			<Button
+				android:id="@+id/buttonT"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="T"/>
+
+			<Button
+				android:id="@+id/buttonU"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="U"/>
+
+			<Button
+				android:id="@+id/buttonV"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="V"/>
+
+			<Button
+				android:id="@+id/buttonW"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="W"/>
+
+			<Button
+				android:id="@+id/buttonX"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="X"/>
+
+			<Button
+				android:id="@+id/buttonY"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="Y"/>
+
+			<Button
+				android:id="@+id/buttonZ"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:width="50dp"
+				android:height="50dp"
+				android:onClick="letterPressed"
+				android:text="Z"/>
+		</LinearLayout>
+	</HorizontalScrollView>
+</RelativeLayout>
+<!-- From: file:/C:/Users/Levi/AndroidStudioProjects/TheHangDroidsBodyCount/app/src/main/res/layout/activity_multi_game.xml -->
